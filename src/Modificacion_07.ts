@@ -15,6 +15,7 @@ el enlace a dicho repositorio GitHub con los ejercicios solicitados.*/
 
 
 //
+/*
 namespace cola {
     interface StackNode<T> {
         value: T | null
@@ -79,4 +80,4 @@ namespace cola {
     function print() {
         
     }
-}
+}*/
