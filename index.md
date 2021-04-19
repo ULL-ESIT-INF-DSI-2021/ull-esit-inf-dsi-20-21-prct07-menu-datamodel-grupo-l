@@ -105,6 +105,6 @@ Desde mi punto de vista, ha sido una practica muy útil e interesante. Me ayuda 
 
 ## 5. Bibliografía
 
-1. [Contenido sobre interfaces]([Microsoft Word - EIPR_Tema04.doc (unirioja.es)](https://www.unirioja.es/cu/jearansa/0809/archivos/EIPR_Tema04.pdf))
-2. [Principios SOLID]([PRINCIPIOS S.O.L.I.D. USANDO TYPESCRIPT - Baufest (tss.com.pe)](http://www.tss.com.pe/blog/principios-s-o-l-i-d-usando-typescript))
+1. [Contenido sobre interfaces](Microsoft Word - EIPR_Tema04.doc (unirioja.es)](https://www.unirioja.es/cu/jearansa/0809/archivos/EIPR_Tema04.pdf)
+2. [Principios SOLID](PRINCIPIOS S.O.L.I.D. USANDO TYPESCRIPT - Baufest (tss.com.pe)](http://www.tss.com.pe/blog/principios-s-o-l-i-d-usando-typescript)
 3. [Apuntes de la clase](https://ull-esit-inf-dsi-2021.github.io/typescript-theory/typescript-solid.html)
