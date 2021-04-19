@@ -13,11 +13,11 @@
         "./src/Foods/tofu.ts",
         "./src/Foods/vegetable.ts",
         "./src/Foods/fruits.ts",
-        "./src/Foods/prodcts.ts",
+        "./src/Foods/products.ts",
         "./src/index.ts",
         "./src/jsonMenus.ts",
         "./src/jsonPlate.ts",
-        "./srcdb.ts"
+        "./src/db.ts"
     ],
     "out": "./docs"
  }
