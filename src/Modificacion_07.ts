@@ -7,7 +7,6 @@
             pseek. Devuelve el primer elemento insertado en la cola sin extraerlo.
             size. Devuelve el número de elementos que contiene la cola.
             print. Visualiza el contenido de la cola.
-
 La cola, podrá ser de cualquier tipo de datos, string, number, boolean, etc....
 
 Recuerde que deberá incluir la documentación haciendo uso de TypeDoc, así como seguir una metodología TDD/BDD utilizando el framework de pruebas Mocha y la librería de aserciones Chai. También trate de comprobar el nivel de cubrimiento de su código mediante Instanbul, así como hacer un seguimiento de dicho cubrimiento con Coveralls. Como entrega de esta tarea deberá indicar, de nuevo,
@@ -37,7 +36,6 @@ namespace cola {
         pop(): StackNode<T> | null
       }
       
-    //https://dev.to/macmacky/implement-a-stack-with-typescript-4e09
 
     //Para funcion push
     function push(val: T) {

@@ -29,7 +29,7 @@ export interface identifiable {
  * second = segundo plato
  * dessert = postres
  */
-export type plateCategory = 'entree' | 'frist' | 'second' | 'dessert';
+export type plateCategory = 'entree' | 'first' | 'second' | 'dessert';
 
 export enum AllOptions {
     Show = 'Show the cart',

@@ -1,6 +1,9 @@
 import { Food } from '../food';
 import { macroT, locationT } from '../helpers';
 
+/**
+ * @description Clase de Verduras
+ */
 export class Vegetable extends Food {
     constructor(name: string, origin:locationT, macros:macroT,
         weight: number, Kcal100gr:number, priceKg:number) {

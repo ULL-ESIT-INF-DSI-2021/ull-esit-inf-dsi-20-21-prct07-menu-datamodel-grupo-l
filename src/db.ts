@@ -1,8 +1,8 @@
 import { Menu } from './menu';
 import { Plate } from './plate';
 import { Command } from './command';
-import lowdb from 'lowdb';
-import FileSync from 'lowdb/adapters/FileSync';
+import lowdb = require("lowdb");
+import FileSync = require("lowdb/adapters/FileSync");
 
 /**
  * @description Type used for the lowdb module

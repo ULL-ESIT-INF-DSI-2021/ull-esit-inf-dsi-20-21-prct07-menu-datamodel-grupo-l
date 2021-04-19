@@ -5,7 +5,6 @@
         "./src/carte.ts",
         "./src/helpers.ts",
         "./src/command.ts",
-        "./src/commandManager.ts",
         "./src/Foods/cereal.ts",
         "./src/Foods/eggs.ts",
         "./src/Foods/fish.ts",
@@ -13,7 +12,12 @@
         "./src/Foods/nuts.ts",
         "./src/Foods/tofu.ts",
         "./src/Foods/vegetable.ts",
-        "./src/Foods/fruits.ts"
+        "./src/Foods/fruits.ts",
+        "./src/Foods/prodcts.ts",
+        "./src/index.ts",
+        "./src/jsonMenus.ts",
+        "./src/jsonPlate.ts",
+        "./srcdb.ts"
     ],
     "out": "./docs"
  }

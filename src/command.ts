@@ -1,6 +1,7 @@
 import { Carte } from './carte';
 import { Plate } from './plate';
-import inquirer from 'inquirer';
+import inquirer = require("inquirer");
+
 import {
   OptMenu,
   CreateCommand, CreateCustom,
@@ -177,16 +178,16 @@ export class Command {
       type: 'list',
       name: 'command',
       message: 'Escoja una opcion',
-      choices: Object.values(UIModifyMenuOptions)
+      choices: Object.values(OptMenu)
     }]).then((answers) => {
       switch (answers['command']) {
-        case UIModifyMenuOptions.AddNewPlates:
+        case OptMenu.Add:
           this.promptAddNewPlateToCustomMenu(menu);
           break;
-        case UIModifyMenuOptions.DeletePlates:
+        case OptMenu.Remove:
           this.promptDeletePlateFromCustomMenu(menu);
           break;
-        case UIModifyMenuOptions.Back:
+        case OptMenu.Quit:
           this.promptChooseMenuCreateCustom();
           break;
       }
@@ -246,16 +247,16 @@ export class Command {
       type: 'list',
       name: 'command',
       message: 'Escoge la opcion correspondiente',
-      choices: Object.values(UIOptionsCreateCustom)
+      choices: Object.values(CreateCustom)
     }).then((answers) => {
       switch (answers['command']) {
-        case UIOptionsCreateCustom.SelectStartingMenu:
+        case CreateCustom.ModificationMenu:
           this.promptChooseMenuCreateCustom();
           break;
-        case UIOptionsCreateCustom.SelectIndividualPlates:
+        case CreateCustom.IndividualPlate:
           this.promptChoosePlateCreateCustom();
           break;
-        case UIOptionsCreateCustom.Back:
+        case CreateCustom.Quit:
           this.promptStart();
           break;
       }
@@ -315,19 +316,19 @@ export class Command {
       type: 'list',
       name: 'command',
       message: 'Escoja que desea añadir a su pedido',
-      choices: Object.values(UIOptionsCreateCommand)
+      choices: Object.values(CreateCommand)
     }).then((answers) => {
       switch (answers['command']) {
-        case UIOptionsCreateCommand.SelectMenu:
+        case CreateCommand.ChooseMenu:
           this.promptChooseMenu();
           break;
-        case UIOptionsCreateCommand.SelectPlate:
+        case CreateCommand.ChoosePlate:
           this.promptChoosePlate();
           break;
-        case UIOptionsCreateCommand.CreateCustom:
+        case CreateCommand.Create:
           this.promptCreateCustom();
           break;
-        case UIOptionsCreateCommand.Back:
+        case CreateCommand.Quit: 
           this.promptStart();
           break;
       }
@@ -344,16 +345,16 @@ export class Command {
       type: 'list',
       name: 'command',
       message: 'Escoge que desea visualizar',
-      choices: Object.values(UIOptionsShowCarte)
+      choices: Object.values(OptCarte)
     }).then((answers) => {
       switch (answers['command']) {
-        case UIOptionsShowCarte.ShowMenus:
+        case OptCarte.ShowMenu:
           this.showMenus();
           break;
-        case UIOptionsShowCarte.ShowPlates:
+        case OptCarte.ShowPlate:
           this.showPlates();
           break;
-        case UIOptionsShowCarte.Back:
+        case OptCarte.Quit:
           break;
       }
       this.promptStart();
@@ -368,13 +369,13 @@ export class Command {
       type: 'list',
       name: 'command',
       message: 'Bienvenido a la comanda!',
-      choices: Object.values(UIOptionsStart)
+      choices: Object.values(AllOptions)
     }).then((answers) => {
       switch (answers['command']) {
-        case UIOptionsStart.ShowCarte:
+        case AllOptions.Show:
           this.promptShowCarte();
           break;
-        case UIOptionsStart.CreateCommand:
+        case AllOptions.Command:
           this.promptCreateCommand();
           break;
       }
