@@ -6,6 +6,4 @@ import * as Data from './main';
 const userCommand = Command.getCommandInstance();
 userCommand.setRestaurantCarte(Data.carteInstance);
 userCommand.promptStart();
-
-// DB Manager
 const manager = new DBManager('user command', userCommand);

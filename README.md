@@ -1,5 +1,5 @@
  
-# Práctica 07 - 
+# Práctica 07 - Modelo de datos de un sistema que permite el diseño de menús
  
 ```
 Universidad: Universidad de La laguna

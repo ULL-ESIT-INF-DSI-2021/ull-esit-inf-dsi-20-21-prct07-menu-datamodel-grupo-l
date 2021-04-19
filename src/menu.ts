@@ -62,29 +62,18 @@ export class Menu implements printable {
     }
 
     public getName(): string { return this.name; }
-
     public setName(name: string): void { this.name = name; }
-    
     public getPlates(): Plate[] { return this.plates; }
-
     public setPlates(plates: Plate[]): void { this.plates = plates; }
-    
     public getKcal(): number { return this.kcal; }
-
     public setKcal(kcal: number): void { this.kcal = kcal; }
-    
     public getTotalPrice(): number { return this.totalPrice; }
-    
     public setTotalPrice(totalPrice: number): void { this.totalPrice = totalPrice; }
-    
     public getMainGroup(): string { return this.mainGroup; }
-    
     public setMainGroup(mainGroup: string): void { this.mainGroup = mainGroup; }
-    
     public getFoodGroupList(): string[] { return this.foodGroupList; }
-  
     public setFoodGroupList(foodGroupList: string[]): void { this.foodGroupList = foodGroupList; }
-  
+ 
     public calcKcal(): number {
       let result: number = 0;
       this.getPlates().forEach((value) => {
