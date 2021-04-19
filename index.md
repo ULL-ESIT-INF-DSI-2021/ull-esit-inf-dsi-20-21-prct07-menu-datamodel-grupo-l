@@ -1,6 +1,4 @@
-
-
-# Práctica
+# Práctica 07: Modelo de datos de un sistema que permite el diseño de menús
 
 ```
 Universidad: Universidad de La laguna
@@ -24,64 +22,89 @@ El propósito de esta practica de consiste en un diseño orientado a objetos del
 
 La practica se divide en tres partes grandes:
 
-**Implementación de alimentos**
+- **Implementación de alimentos**
+- **Implementación de platos**
+- **Implementación de menú**
+- **Implementación de Carta**
 
-**Implementación de platos**
-
-**Implementación de menú**
 
 
+​																				***Implementación de alimentos***
 
 ```
-Para cada alimentos y/o ingredientes tenemos que almacenar unos cuantos tipos de alimentos
-Alimentos y/o ingredientes:
-	
-	1.  Carnes, 
-        pescados, 
-        huevos, 
-        tofu, 
-        frutos secos, 
-        semillas
-        legumbres.
-        Verduras y hortalizas.
-       	Leche y derivados.
-       	Cereales.
-       	Frutas.
+Para la implementaicon del alimentos, para cada alimentos y/o ingredientes tenemos que crear varios tipos de alimentos o ingredientes, la siguiente table:	
+	- Carnes, 
+    - Pescados, 
+    - Huevos, 
+    - Tofu, 
+    - Frutos secos, 
+    - Semillas
+    - Legumbres.
+    - Verduras y hortalizas.
+    - Leche y derivados.
+    - Cereales.
+    - Frutas.
        	
-    2. Tenemos que crear una tabla de los  nutricional del alimento con respecto a los macronutrientes y            kcal por 100 gr de dicho alimento
-
-    3. Precio del alimento y/o ingrediente por kg en euros.
-
-  Y Tambien tenemos que poner los nombres de alimentos y su localización de su origen
+Además tenemos que crear una tabla de los  nutricional del alimento con respecto a los macronutrientes y     kcal por 100 gr de dicho alimento. Asimismo hay que calcular el precio del alimento y/o ingrediente por kg en euros. En esa parte tenemos que poner los nombres de alimentos y el origen de cada alimentación.
 ```
 
-Los platos consideran en los alimentos y/o los ingredientes ,dentro de los platos tienen cuatro categorías distintas:
+**Clase de Tofu** 
 
-- entrante
+Así como se crea cada clase de alimentación, con distintos atributos como por ejemplo:
+
+(Nombre, Origen, Macros, Peso, Kcal por cada 100 gramo, Precio por cada kilo)
+
+![image-20210419012720471](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210419012720471.png)
+
+La siguiente imagen se muestra distinta información sobre distintos alimentos:
+
+![image-20210419065656599](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210419065656599.png)
+
+
+
+
+
+​																			***Implementación de platos***
+
+````
+Para la implementación de Los platos se consideran en los alimentos y/o los ingredientes ,dentro de los platos tienen cuatro categorías distintas:
+
+- platos entrantes
 - primer plato
 - segundo plato
 - postres
+````
 
 
 
+​																			***Implementación de Menú***
+
+````
+En menú tiene que implemtanruna una serie de consultas como por ejemplo:
+	- Precio total del menú
+	- Platos que lo compone cada alimento
+	- Composicion nutricional del menú
+	- Listado de grupos de alimentos por orden de aparición
+````
 
 
-- El menú de los platos 
 
--  El nutricional del plato, el suma de los alimentos  y/o ingredientes , ya que siempre se calcula con 100grs ,pero puede ser  unos cuantos  cosas a veces no se puede calcular con 100grs
+​																			***Implementación de Carta***
 
-- Grupo de alimento predominante.
+````
+La implementación de la carta esta compuesta por una seria de menús prediseñados, en la carta aparecerá platos individuales para los comensales.
+Por un lado está disponible la carta con varios platos para  un grupo de personas
+Por otro lado está disponible la carta de plato indivual para cada mienbro.
+````
 
-- precio de los platos ,  un plate
 
-  
 
 ## 4. Conclusiones
+
+Desde mi punto de vista, ha sido una practica muy útil e interesante. Me ayuda a conocer más sobre TypeScript, y también conocer más la implementación de SOLID, Inquirer.js y Lowdb. Me gustaría aprender más TypeScript y desarrollar más diseños interesantes. 
 
 ## 5. Bibliografía
 
 1. [Contenido sobre interfaces]([Microsoft Word - EIPR_Tema04.doc (unirioja.es)](https://www.unirioja.es/cu/jearansa/0809/archivos/EIPR_Tema04.pdf))
-
 2. [Principios SOLID]([PRINCIPIOS S.O.L.I.D. USANDO TYPESCRIPT - Baufest (tss.com.pe)](http://www.tss.com.pe/blog/principios-s-o-l-i-d-usando-typescript))
-
-3. 
+3. [Apuntes de la clase](https://ull-esit-inf-dsi-2021.github.io/typescript-theory/typescript-solid.html)
